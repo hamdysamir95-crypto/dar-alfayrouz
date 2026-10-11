@@ -3,32 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="دار الفيروز للمصاحف والكتب الإسلامية والهدايا">
+<meta name="description" content="دار الفيروز للمصاحف والكتب الإسلامية - توريد أفراد ومكتبات وجملة">
 <title>دار الفيروز | المصاحف والكتب الإسلامية</title>
 <style>
 :root{--green:#123c32;--green2:#1e5948;--gold:#c8a65a;--cream:#fbf8f0;--ink:#202b27;--muted:#66736d;--white:#fff}
 *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.7}
 a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-header{background:var(--green);color:white;position:sticky;top:0;z-index:5;box-shadow:0 3px 16px #0002}
+header{background:var(--green);color:white;position:sticky;top:0;z-index:100;box-shadow:0 3px 16px rgba(0,0,0,0.2)}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;font-size:1.35rem;font-weight:bold}.mark{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--gold);border-radius:50%;color:var(--gold);font-size:1.35rem}
 nav{display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem}nav a:hover{color:var(--gold)}
 .hero{background:radial-gradient(circle at 20% 20%,#2b6855 0,transparent 40%),linear-gradient(135deg,#123c32,#092820);color:white;padding:68px 0 62px}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:36px}
 .kicker{color:#e3c879;font-weight:bold}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.25;margin:12px 0}.hero p{color:#e5eee9;max-width:610px}
-.btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--gold);color:#172d25;font-weight:bold;border:0;cursor:pointer;font-family:inherit}.btn.secondary{background:transparent;border:1px solid #ffffff80;color:white;margin-right:8px}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;background:var(--gold);color:#172d25;font-weight:bold;border:0;cursor:pointer;font-family:inherit;text-align:center}.btn.secondary{background:transparent;border:1px solid #ffffff80;color:white;margin-right:8px}
+.btn-whatsapp{background:#25D366;color:white;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 .hero-art{border:1px solid #d7bd7566;border-radius:28px;padding:30px;text-align:center;background:#ffffff0b;min-height:235px;display:grid;place-items:center}
 .hero-art .arabic{font-size:2.6rem;color:#ead18d}.hero-art small{display:block;color:#e3eee8}
 section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:22px}.section-head h2{margin:0;color:var(--green);font-size:1.8rem}.section-head p{margin:4px 0;color:var(--muted)}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature,.product,.wholesale-box{background:white;border:1px solid #e8e3d6;border-radius:16px;padding:20px}.feature .ico{font-size:1.8rem}.feature h3{margin:8px 0 4px;color:var(--green)}.feature p{margin:0;color:var(--muted);font-size:.94rem}
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.filter{background:white;border:1px solid #d8dfd9;padding:8px 14px;border-radius:99px;cursor:pointer;font:inherit}.filter.active{background:var(--green);color:white}
 .products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{padding:0;overflow:hidden}.product-visual{height:175px;background:linear-gradient(140deg,#e7eadf,#f8f2df);display:grid;place-items:center;color:var(--green);font-size:3rem;position:relative}.product-visual:after{content:"دار الفيروز";position:absolute;bottom:10px;font-size:.75rem;color:#49665a}
-.product-body{padding:15px}.tag{font-size:.75rem;color:var(--green2);background:#e8f0e9;padding:4px 8px;border-radius:99px}.product h3{font-size:1rem;margin:10px 0 4px}.product p{font-size:.88rem;color:var(--muted);margin:0 0 12px}.price{font-weight:bold;color:var(--green);margin-bottom:12px}.product .btn{width:100%;text-align:center;padding:9px;font-size:.9rem}
-.note{background:#fff7df;border:1px solid #ead9a5;border-radius:12px;padding:12px 15px;color:#665225;font-size:.9rem;margin-top:18px}
+.product-body{padding:15px}.tag{font-size:.75rem;color:var(--green2);background:#e8f0e9;padding:4px 8px;border-radius:99px}.product h3{font-size:1rem;margin:10px 0 4px}.product p{font-size:.88rem;color:var(--muted);margin:0 0 12px}.price{font-weight:bold;color:var(--green);margin-bottom:12px}.product .btn{width:100%;padding:9px;font-size:.9rem}
 .wholesale{background:#edf2eb}.wholesale-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.wholesale h2{color:var(--green);font-size:1.8rem;margin:0 0 10px}.wholesale p{color:var(--muted)}.wholesale-box ul{padding-right:20px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{padding:24px;border-radius:16px;background:white;border:1px solid #e8e3d6}
+.partner-contacts{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.partner-btn{display:flex;align-items:center;justify-content:space-between;background:#f3f7f4;border:1px solid #c7d8cc;padding:12px 16px;border-radius:10px;font-weight:bold;color:var(--green)}
+.partner-btn:hover{background:#e7efe9}
 footer{background:#092820;color:#dbe6df;padding:26px 0;text-align:center}footer small{color:#a9bdb2}
-input,textarea{font:inherit;padding:11px;border:1px solid #d8dfd9;border-radius:9px;width:100%;margin:5px 0 12px;background:#fff}
+input,textarea,select{font:inherit;padding:10px;border:1px solid #d8dfd9;border-radius:8px;width:100%;margin:5px 0 12px;background:#fff}
+
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:999;padding:15px}
+.modal{background:#fff;border-radius:16px;width:min(480px,100%);padding:25px;box-shadow:0 10px 30px rgba(0,0,0,0.3)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.modal-header h3{margin:0;color:var(--green)}
+.modal-close{background:none;border:0;font-size:1.4rem;cursor:pointer;color:var(--muted)}
+.modal label{font-size:.9rem;font-weight:bold;color:var(--ink)}
+
 @media(max-width:800px){.hero-grid,.wholesale-grid,.contact-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.hero{padding:44px 0}.hero-art{min-height:150px}nav{gap:12px}}
 @media(max-width:430px){.products{grid-template-columns:1fr 1fr;gap:9px}.product-visual{height:125px}.product-body{padding:11px}.product h3{font-size:.9rem}.btn.secondary{margin:10px 0 0}.brand{font-size:1.1rem}}
 </style>
@@ -36,64 +47,205 @@ input,textarea{font:inherit;padding:11px;border:1px solid #d8dfd9;border-radius:
 <body>
 <header><div class="wrap nav">
 <a class="brand" href="#"><span class="mark">ف</span><span>دار الفيروز</span></a>
-<nav><a href="#products">المنتجات</a><a href="#wholesale">للمكتبات والتجار</a><a href="#about">عن دار الفيروز</a><a href="#contact">تواصل معنا</a></nav>
+<nav>
+  <a href="#products">المصاحف والكتب</a>
+  <a href="#wholesale">قسم الجملة والمكتبات</a>
+  <a href="#about">عن الدار</a>
+  <a href="#contact">تواصل معنا</a>
+</nav>
 </div></header>
+
 <main>
 <section class="hero"><div class="wrap hero-grid">
-<div><div class="kicker">نورٌ يُهدى.. وخيرٌ يدوم</div><h1>دار الفيروز<br>للمصاحف والكتب الإسلامية</h1>
-<p>تصفّح مجموعة مختارة من المصاحف والكتب الإسلامية والهدايا، واطلب بسهولة. ونوفر مسارًا مخصصًا للمكتبات وتجار الجملة.</p>
-<a class="btn" href="#products">تصفّح المنتجات</a><a class="btn secondary" href="#wholesale">طلبات الجملة</a></div>
-<div class="hero-art"><div><div class="arabic">﷽</div><div style="font-size:1.5rem;color:#fff;margin:10px">اقرأ.. وارتقِ</div><small>المصاحف والكتب الإسلامية</small></div></div>
+<div>
+  <div class="kicker">نورٌ يُهدى.. وخيرٌ يدوم</div>
+  <h1>دار الفيروز<br>للمصاحف والكتب الإسلامية</h1>
+  <p>نوفر المصاحف الشريفة والكتب الإسلامية للأفراد بأسعار مناسبة، مع عروض وأسعار خاصة لتوريد الكميات للمكتبات وتجار الجملة.</p>
+  <a class="btn" href="#products">طلب أفراد (قطاعي)</a>
+  <a class="btn secondary" href="#wholesale">طلبات الجملة والمكتبات</a>
+</div>
+<div class="hero-art">
+  <div>
+    <div class="arabic">﷽</div>
+    <div style="font-size:1.5rem;color:#fff;margin:10px">اقرأ.. وارتقِ</div>
+    <small>المصاحف الشريفة • أمهات الكتب الإسلامية</small>
+  </div>
+</div>
 </div></section>
+
 <section><div class="wrap features">
-<div class="feature"><div class="ico">📖</div><h3>منتجات مختارة</h3><p>مصاحف وكتب ومنتجات إسلامية، مع تفاصيل واضحة لكل منتج.</p></div>
-<div class="feature"><div class="ico">📦</div><h3>طلبات أفراد وجملة</h3><p>اطلب احتياجك كفرد أو تواصل معنا لتوريد الكميات للمكتبات.</p></div>
-<div class="feature"><div class="ico">🤝</div><h3>تواصل مباشر</h3><p>تأكيد الطلبات والاستفسارات مباشرة مع فريق دار الفيروز.</p></div>
+<div class="feature"><div class="ico">📖</div><h3>طلبات الأفراد</h3><p>شراء مباشر للنسخ الفردية والمجموعات مع خدمة التوصيل.</p></div>
+<div class="feature"><div class="ico">📦</div><h3>طلبات الجملة والمكتبات</h3><p>أسعار خاصة وتوريد مباشر للمكتبات، المراكز، والموزعين.</p></div>
+<div class="feature"><div class="ico">📞</div><h3>خدمة عملاء مباشرة</h3><p>متابعة وتأكيد فوري للطلبات عبر أرقام إدارة المبيعات.</p></div>
 </div></section>
+
 <section id="products"><div class="wrap">
-<div class="section-head"><div><h2>منتجات دار الفيروز</h2><p>اختَر القسم الذي تبحث عنه</p></div></div>
-<div class="filters"><button class="filter active" data-cat="all">الكل</button><button class="filter" data-cat="quran">المصاحف</button><button class="filter" data-cat="books">الكتب الإسلامية</button><button class="filter" data-cat="gifts">هدايا ومنتجات</button></div>
+<div class="section-head">
+  <div>
+    <h2>المصاحف والكتب الإسلامية</h2>
+    <p>تصفح الأصناف واطلب بالكمية المناسبة (فردي أو جملة)</p>
+  </div>
+</div>
+<div class="filters">
+  <button class="filter active" data-cat="all">الكل</button>
+  <button class="filter" data-cat="quran">المصاحف الشريفة</button>
+  <button class="filter" data-cat="books">الكتب الإسلامية</button>
+</div>
 <div class="products" id="productList"></div>
-<div class="note">تنبيه: المنتجات والأسعار المعروضة هنا نماذج تجريبية للتصميم. يجب استبدالها ببيانات دار الفيروز الحقيقية قبل نشر الموقع.</div>
 </div></section>
+
 <section class="wholesale" id="wholesale"><div class="wrap wholesale-grid">
-<div><h2>أصحاب المكتبات وتجار الجملة</h2><p>هل تبحث عن مورد للمصاحف والكتب الإسلامية؟ أرسل لنا الأصناف والكميات المطلوبة، وسنتواصل معك لتأكيد التوافر وسعر الجملة.</p><a class="btn" href="#" onclick="wholesaleOrder(event)">اطلب عرض سعر للجملة</a></div>
-<div class="wholesale-box"><h3 style="margin-top:0;color:var(--green)">لتجهيز طلبك بسرعة</h3><ul><li>اسم المكتبة أو النشاط</li><li>المدينة وبيانات التواصل</li><li>الأصناف والكميات المطلوبة</li><li>موعد التوريد المتوقع</li></ul></div>
+<div>
+  <h2>أصحاب المكتبات وتجار الجملة</h2>
+  <p>نوفر أسعاراً تنافسية لتوريد الكميات للمكتبات والمعاهد والموزعين في مختلف المحافظات. أرسل قائمة الأصناف والكمية المطلوبة لتزويدك بأفضل عرض سعر متاح.</p>
+  <a class="btn" href="#" onclick="openWholesaleModal(event)">طلب تسعير جملة فوري</a>
+</div>
+<div class="wholesale-box">
+  <h3 style="margin-top:0;color:var(--green)">بيانات تسهل تسعير طلبك سريعاً:</h3>
+  <ul>
+    <li>اسم المكتبة / النشاط والمدينة</li>
+    <li>الأصناف المطلوبة والمقاسات</li>
+    <li>الكمية التقريبية لكل صنف</li>
+    <li>الرقم المطلوب للتواصل والمتابعة</li>
+  </ul>
+</div>
 </div></section>
-<section id="about"><div class="wrap"><div class="section-head"><div><h2>عن دار الفيروز</h2><p>وجهتك للمصاحف والكتب الإسلامية والتوريد للمكتبات.</p></div></div><p>نحرص على توفير منتجات إسلامية مناسبة للأفراد والمكتبات، مع الاهتمام بوضوح بيانات المنتج وسهولة الطلب والتواصل.</p></div></section>
+
+<section id="about"><div class="wrap">
+<div class="section-head">
+  <div><h2>عن دار الفيروز</h2><p>وجهتك الأولى لطباعة ونشر وتوزيع المصاحف والكتب الإسلامية</p></div>
+</div>
+<p>نعمل على توفير طبعات عالية الجودة من المصاحف والكتب الإسلامية المعتمدة، وتسهيل سبل التوريد للمكتبات والأفراد بمرونة وسرعة في التجهيز والشحن.</p>
+</div></section>
+
 <section id="contact"><div class="wrap contact-grid">
-<div><h2 style="color:var(--green)">تواصل مع دار الفيروز</h2><p>للاستفسار عن الأسعار والتوافر والشحن، تواصل معنا مباشرة.</p><a class="btn" href="#" onclick="generalOrder(event)">تواصل عبر واتساب</a></div>
-<div class="contact-card"><h3 style="margin-top:0">معلومات التواصل</h3><p>واتساب: <strong id="phoneDisplay">أضف رقم واتساب المكتبة</strong></p><p>مواعيد العمل: <span>تُضاف لاحقًا</span></p><p>التوصيل: <span>تُحدد مناطق التوصيل والتكلفة عند التأكيد</span></p></div>
+<div>
+  <h2 style="color:var(--green)">تواصل مع إدارة المبيعات</h2>
+  <p>يمكنك مراسلتنا مباشرة على أرقام الواتساب لأي استفسار أو متابعة طلب:</p>
+  <div class="partner-contacts">
+    <a class="partner-btn" href="https://api.whatsapp.com/send?phone=201069232640" target="_blank" rel="noopener noreferrer">
+      <span>مبيعات وتوريدات (1)</span>
+      <span>01069232640 💬</span>
+    </a>
+    <a class="partner-btn" href="https://api.whatsapp.com/send?phone=201100676312" target="_blank" rel="noopener noreferrer">
+      <span>مبيعات وتوريدات (2)</span>
+      <span>01100676312 💬</span>
+    </a>
+  </div>
+</div>
+<div class="contact-card">
+  <h3 style="margin-top:0">معلومات التواصل السريع</h3>
+  <p>هاتف / واتساب 1: <strong>01069232640</strong></p>
+  <p>هاتف / واتساب 2: <strong>01100676312</strong></p>
+  <p>خدمة التوصيل: <strong>متاح الشحن والتوصيل لجميع المحافظات</strong></p>
+</div>
 </div></section>
 </main>
-<footer><div class="wrap">دار الفيروز <br><small>المصاحف والكتب الإسلامية • © <span id="year"></span></small></div></footer>
+
+<div class="modal-overlay" id="orderModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modalTitle">طلب منتج</h3>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div>
+      <input type="hidden" id="modalItemName">
+      <label>نوع الطلب:</label>
+      <select id="modalOrderType">
+        <option value="طلب أفراد (قطاعي)">طلب أفراد (قطاعي)</option>
+        <option value="طلب كميات / جملة ومكتبات">طلب كميات / جملة ومكتبات</option>
+      </select>
+      
+      <label>الكمية المطلوبة:</label>
+      <input type="number" id="modalQty" value="1" min="1">
+
+      <label>تحويل الطلب إلى الرقم:</label>
+      <select id="modalTargetPhone">
+        <option value="201069232640">مبيعات: 01069232640</option>
+        <option value="201100676312">مبيعات: 01100676312</option>
+      </select>
+      
+      <label>ملاحظات إضافية (المحافظة / الاسم / المقاس):</label>
+      <textarea id="modalNotes" rows="2" placeholder="اختياري..."></textarea>
+      
+      <button class="btn btn-whatsapp" style="width:100%" onclick="submitOrder()">إرسال الطلب عبر واتساب</button>
+    </div>
+  </div>
+</div>
+
+<footer><div class="wrap">دار الفيروز للمصاحف والكتب الإسلامية • © <span id="year"></span></div></footer>
+
 <script>
-/* IMPORTANT: Replace the placeholder with the WhatsApp number including country code, digits only.
-   Example Egypt: 2010XXXXXXXX (do not include + or spaces). */
-const WHATSAPP_NUMBER = "REPLACE_WITH_WHATSAPP_NUMBER";
 const products = [
- {id:1,name:"مصحف شريف — نموذج",cat:"quran",desc:"أضف المقاس ونوع الخط ولون الغلاف.",price:"يُحدد السعر",symbol:"۞"},
- {id:2,name:"مصحف هدية — نموذج",cat:"quran",desc:"أضف تفاصيل التغليف والمقاس.",price:"يُحدد السعر",symbol:"۩"},
- {id:3,name:"كتاب إسلامي — نموذج",cat:"books",desc:"أضف اسم الكتاب والمؤلف والناشر.",price:"يُحدد السعر",symbol:"✦"},
- {id:4,name:"مجموعة كتب — نموذج",cat:"books",desc:"أضف تفاصيل المجموعة وعدد الأجزاء.",price:"يُحدد السعر",symbol:"❖"},
- {id:5,name:"حامل مصحف — نموذج",cat:"gifts",desc:"أضف الخامة والمقاسات المتاحة.",price:"يُحدد السعر",symbol:"۞"},
- {id:6,name:"هدية إسلامية — نموذج",cat:"gifts",desc:"أضف الوصف والألوان المتاحة.",price:"يُحدد السعر",symbol:"✧"},
- {id:7,name:"مصحف للمكتبات — نموذج",cat:"quran",desc:"متاح للاستفسار عن كميات الجملة.",price:"سعر الجملة عند الطلب",symbol:"۩"},
- {id:8,name:"كتاب إسلامي — نموذج",cat:"books",desc:"أضف بيانات المنتج الفعلية.",price:"يُحدد السعر",symbol:"✦"}
+ {id:1, name:"مصحف جوامعي فاخر", cat:"quran", desc:"طباعة واضحة، ورق شمواه فاخر، غلاف مقوى.", price:"متوفر قطاعي وجملة", symbol:"۞"},
+ {id:2, name:"مصحف الحفظ والتدبر (وسط)", cat:"quran", desc:"مثالي لطلاب العلم وحفظة القرآن الكريم.", price:"متوفر قطاعي وجملة", symbol:"۩"},
+ {id:3, name:"مصحف تهجد وتراويح كبار", cat:"quran", desc:"خط واضح كبير مع هوامش مريحة للقراءة.", price:"متوفر قطاعي وجملة", symbol:"۞"},
+ {id:4, name:"رياض الصالحين - طبعة محققة", cat:"books", desc:"طبعة مميزة ومضبوطة بالشكل.", price:"متوفر قطاعي وجملة", symbol:"✦"},
+ {id:5, name:"تفسير السعدي (طبعة معتمدة)", cat:"books", desc:"مجلد فاخر بتجليد فني متميز للمكتبات.", price:"متوفر قطاعي وجملة", symbol:"❖"},
+ {id:6, name:"سلسلة العقيدة والفقه الميسر", cat:"books", desc:"سلسلة مبسطة مناسبة للأفراد وحلقات العلم.", price:"متوفر قطاعي وجملة", symbol:"✦"},
+ {id:7, name:"مصحف ربع (طباعة متميزة)", cat:"quran", desc:"متاح بالكرتونة للمكتبات وتوزيع الخيرات.", price:"سعر جملة خاص للكميات", symbol:"۩"},
+ {id:8, name:"أمهات كتب الحديث والتفسير", cat:"books", desc:"مجموعات ومجلدات كاملة لتجهيز المكتبات.", price:"سعر جملة خاص للكميات", symbol:"❖"}
 ];
-const labels={quran:"المصاحف",books:"كتب إسلامية",gifts:"هدايا ومنتجات"};
+
+const labels = {quran: "المصاحف الشريفة", books: "كتب إسلامية"};
+
 function render(cat="all"){
- const list=document.getElementById("productList");
- list.innerHTML=products.filter(p=>cat==="all"||p.cat===cat).map(p=>`<article class="product"><div class="product-visual">${p.symbol}</div><div class="product-body"><span class="tag">${labels[p.cat]}</span><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price}</div><button class="btn" onclick="orderProduct(${p.id})">اطلب عبر واتساب</button></div></article>`).join("");
+ const list = document.getElementById("productList");
+ list.innerHTML = products.filter(p => cat === "all" || p.cat === cat).map(p => `
+   <article class="product">
+     <div class="product-visual">${p.symbol}</div>
+     <div class="product-body">
+       <span class="tag">${labels[p.cat]}</span>
+       <h3>${p.name}</h3>
+       <p>${p.desc}</p>
+       <div class="price">${p.price}</div>
+       <button class="btn" onclick="openOrderModal('${p.name}')">طلب عبر واتساب</button>
+     </div>
+   </article>
+ `).join("");
 }
-function wa(message){
- if(WHATSAPP_NUMBER==="REPLACE_WITH_WHATSAPP_NUMBER"||!WHATSAPP_NUMBER){alert("قبل استقبال الطلبات، أضف رقم واتساب المكتبة داخل ملف index.html.");return;}
- window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message),"_blank");
+
+function openOrderModal(itemName){
+  document.getElementById("modalTitle").innerText = "طلب: " + itemName;
+  document.getElementById("modalItemName").value = itemName;
+  document.getElementById("orderModal").style.display = "flex";
 }
-function orderProduct(id){const p=products.find(x=>x.id===id);wa("السلام عليكم، أريد الاستفسار/طلب المنتج من دار الفيروز:\n"+p.name+"\nمن فضلكم أكدوا السعر والتوافر.");}
-function generalOrder(e){e.preventDefault();wa("السلام عليكم، أريد الاستفسار عن منتجات دار الفيروز وأسعارها.");}
-function wholesaleOrder(e){e.preventDefault();wa("السلام عليكم، أنا صاحب مكتبة وأرغب في طلب عرض سعر للجملة من دار الفيروز.\nاسم المكتبة:\nالمدينة:\nالأصناف والكميات:");}
-document.querySelectorAll(".filter").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.cat)}));
-document.getElementById("year").textContent=new Date().getFullYear();render();
+
+function openWholesaleModal(e){
+  e.preventDefault();
+  openOrderModal("طلب عرض سعر كميات / جملة للمكتبات");
+}
+
+function closeModal(){
+  document.getElementById("orderModal").style.display = "none";
+}
+
+function submitOrder(){
+  const item = document.getElementById("modalItemName").value;
+  const orderType = document.getElementById("modalOrderType").value;
+  const qty = document.getElementById("modalQty").value;
+  const phone = document.getElementById("modalTargetPhone").value;
+  const notes = document.getElementById("modalNotes").value.trim();
+
+  let msg = `السلام عليكم ورحمة الله، أرغب في تقديم طلب من دار الفيروز:\n`;
+  msg += `• الصنف: ${item}\n`;
+  msg += `• النوع: ${orderType}\n`;
+  msg += `• الكمية: ${qty}\n`;
+  if(notes) msg += `• ملاحظات: ${notes}\n`;
+  msg += `يرجى تأكيد السعر وموعد التجهيز.`;
+
+  const url = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(msg);
+  window.location.href = url;
+}
+
+document.querySelectorAll(".filter").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".filter").forEach(x => x.classList.remove("active"));
+  b.classList.add("active");
+  render(b.dataset.cat);
+}));
+
+document.getElementById("year").textContent = new Date().getFullYear();
+render();
 </script>
-</body></html>
+</body>
+</html>
